@@ -186,7 +186,7 @@ def restore(
     state_sharding,
     init_state: Optional[Any] = None,
 ) -> Any:
-    ckpt_path = os.path.join(checkpoint_path, "ckpt-0")
+    ckpt_path = os.path.join(checkpoint_path, "checkpoint")
 
     rank_logger.info("Loading checkpoint at {}".format(ckpt_path))
     ckpt_shapes = state_shapes
